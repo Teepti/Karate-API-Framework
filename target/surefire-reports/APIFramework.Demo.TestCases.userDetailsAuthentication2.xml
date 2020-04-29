@@ -1,0 +1,10 @@
+<testsuite failures="0" name="APIFramework/Demo/TestCases/userDetailsAuthentication2.feature" skipped="0" tests="1" time="3.512722">
+  <testcase classname="APIFramework.Demo.TestCases.userDetailsAuthentication2" name="Post Call" time="3.512722">
+    <system-out>* def myFeature = call read('userDetailsAuthentication.feature'){email: 'eve.holt@reqres.in', password: 'pistol'} . passed
+* def authToken = myFeature.accessToken ................................... passed
+When url 'https://reqres.in/api/users?page=2' ............................. passed
+And header Authorization = authToken ...................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+</testsuite>

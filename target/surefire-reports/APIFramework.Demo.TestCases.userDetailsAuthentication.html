@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<meta charset="utf-8">
+    
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    
+<link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+<link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    
+<link href="favicon.ico" rel="shortcut icon">
+    
+<script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+<title>APIFramework.Demo.TestCases.userDetailsAuthentication</title>
+  
+</head>
+  
+<body>
+    
+<div id="root-container">
+      
+<div id="leftnav">
+        
+<div class="nav-logo">
+          
+<a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+<div class="nav-count">
+            
+<div class="bg-success" id="nav-pass">1</div>
+            
+<div class="bg-danger" id="nav-fail">0</div>
+          
+</div>
+        
+</div>
+        
+<div id="nav-type">Scenarios</div>         
+        
+<div id="nav-date">2020-04-28 01:54:03 PM</div>        
+      
+<div class="nav-container">
+<div class="nav-item passed">
+<a href="#[1:5]">[1:5] Authentication Test </a>
+</div>
+</div>
+</div>
+      
+<div id="content">
+      
+<div class="page-heading alert alert-primary">
+<a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">APIFramework/Demo/TestCases/userDetailsAuthentication.feature</span><span class="feature-description">API Authentication</span>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1:5]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario: [1:5]</span><span class="scenario-name">Authentication Test </span>
+</div>
+<div class="scenario-time passed">ms: 9705</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[1:5]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[1:5]bg">
+<div class="step-container" id="1">
+<div class="step-ref bg-step">1</div>
+<div class="step-cell passed">* url 'https://reqres.in/api/'</div>
+</div>
+<div class="time-cell passed">9</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="2">
+<div class="step-ref passed">2</div>
+<div class="step-cell passed">* def params =</div>
+</div>
+<div class="time-cell passed">34</div>
+</div>
+<div class="preformatted" data-parent="2">{
+	'email': '#(email)',
+	'password': '#(password)'
+}</div>
+<div class="step-row">
+<div class="step-container" id="3">
+<div class="step-ref passed">3</div>
+<div class="step-cell passed">Given path 'oauth2/token'</div>
+</div>
+<div class="time-cell passed">22</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="4">
+<div class="step-ref passed">4</div>
+<div class="step-cell passed">And form field grant_type = 'client_credentials'</div>
+</div>
+<div class="time-cell passed">4</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="5">
+<div class="step-ref passed">5</div>
+<div class="step-cell passed">And form fields params</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="6">
+<div class="step-ref passed">6</div>
+<div class="step-cell passed">When method POST</div>
+</div>
+<div class="time-cell passed">9626</div>
+</div>
+<div class="preformatted" data-parent="6">13:53:52.597 request:
+1 &gt; POST https://reqres.in/api/oauth2/token
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 77
+1 &gt; Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+1 &gt; Host: reqres.in
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_242)
+grant_type=client_credentials&amp;email=%23%28email%29&amp;password=%23%28password%29
+
+13:54:01.911 response time in milliseconds: 9314.01
+1 &lt; 201
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; CF-RAY: 58af631aff0b07f6-ATL
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 129
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Tue, 28 Apr 2020 08:24:28 GMT
+1 &lt; Etag: W/"81-AiQ1eHl0yL0jb8fRbqNQGpBR4ws"
+1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 &lt; Server: cloudflare
+1 &lt; Set-Cookie: __cfduid=d05966f967e3cb645c537f66eafc6f8551588062268; expires=Thu, 28-May-20 08:24:28 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+1 &lt; cf-request-id: 02617c44de000007f6641ab200000001
+{"grant_type":"client_credentials","email":"#(email)","password":"#(password)","id":"513","createdAt":"2020-04-28T08:24:28.817Z"}</div>
+<div class="step-row">
+<div class="step-container" id="7">
+<div class="step-ref passed">7</div>
+<div class="step-cell passed">Then status 201</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="8">
+<div class="step-ref passed">8</div>
+<div class="step-cell passed">Then print 'response ---&gt;',response</div>
+</div>
+<div class="time-cell passed">4</div>
+</div>
+<div class="preformatted" data-parent="8">13:54:01.916 [print] response ---&gt; {
+  "createdAt": "2020-04-28T08:24:28.817Z",
+  "password": "#(password)",
+  "grant_type": "client_credentials",
+  "id": "513",
+  "email": "#(email)"
+}</div>
+<div class="step-row">
+<div class="step-container" id="9">
+<div class="step-ref passed">9</div>
+<div class="step-cell passed">* def accessToken = response.token</div>
+</div>
+<div class="time-cell passed">5</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="10">
+<div class="step-ref passed">10</div>
+<div class="step-cell passed">Then print accessToken</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="10">13:54:01.922 [print]</div>
+</div>
+</div>
+    
+</div>   
+  
+</body>
+
+</html>

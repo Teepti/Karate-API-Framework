@@ -1,0 +1,12 @@
+<testsuite failures="0" name="APIFramework/Demo/TestCases/dataDriven.feature" skipped="0" tests="1" time="10.836546">
+  <testcase classname="APIFramework.Demo.TestCases.dataDriven" name="Create User" time="10.836546">
+    <system-out>* url 'https://reqres.in/' ................................................ passed
+* def jsonPayLoad = read('../Data/request.json') .......................... passed
+Given path 'api/users/' ................................................... passed
+And request jsonPayLoad ................................................... passed
+And header Content-Type = 'application/json' .............................. passed
+And param delay = 3 ....................................................... passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... passed</system-out>
+  </testcase>
+</testsuite>

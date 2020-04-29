@@ -1,0 +1,14 @@
+<testsuite failures="0" name="APIFramework/Demo/TestCases/userDetailsAuthentication.feature" skipped="0" tests="1" time="9.704511">
+  <testcase classname="APIFramework.Demo.TestCases.userDetailsAuthentication" name="Authentication Test" time="9.704511">
+    <system-out>* url 'https://reqres.in/api/' ............................................ passed
+* def params = ............................................................ passed
+Given path 'oauth2/token' ................................................. passed
+And form field grant_type = 'client_credentials' .......................... passed
+And form fields params .................................................... passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... passed
+Then print 'response ---&gt;',response ....................................... passed
+* def accessToken = response.token ........................................ passed
+Then print accessToken .................................................... passed</system-out>
+  </testcase>
+</testsuite>

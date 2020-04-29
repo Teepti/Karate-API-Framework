@@ -1,0 +1,419 @@
+14:12:21.736 karate.env system property was:  
+14:12:22.394 request:
+1 > POST https://reqres.in/api/users/?delay=3
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 34
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_242)
+{"name":"morpheus","job":"leader"}
+
+14:12:27.439 response time in milliseconds: 5043.89
+1 < 201
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 58a740a279e1e3ae-ATL
+1 < Connection: keep-alive
+1 < Content-Length: 84
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 27 Apr 2020 08:42:53 GMT
+1 < Etag: W/"54-L4BTufrMfO44O6ZbrndtX/gj248"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=df7ff78884838800bf67d4bebe7f0d1b41587976970; expires=Wed, 27-May-20 08:42:50 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 025c66b9880000e3ae18127200000001
+{"name":"morpheus","job":"leader","id":"986","createdAt":"2020-04-27T08:42:53.814Z"}
+
+14:12:27.530 karate.env system property was:  
+14:12:27.548 request:
+1 > GET https://reqres.in/api/users%3Fpage=2
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_242)
+
+14:12:28.695 response time in milliseconds: 1145.02
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Age: 689
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 58a740be5f21ba4c-ATL
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 27 Apr 2020 08:42:55 GMT
+1 < Etag: W/"301-ijGNEim/mAI7LpbQIXyQc2bjt+k"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=da3af3ae576267fc07e510a49da84129a1587976975; expires=Wed, 27-May-20 08:42:55 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 025c66cafa0000ba4c45b60200000001
+{"page":1,"per_page":6,"total":12,"total_pages":2,"data":[{"id":1,"name":"cerulean","year":2000,"color":"#98B2D1","pantone_value":"15-4020"},{"id":2,"name":"fuchsia rose","year":2001,"color":"#C74375","pantone_value":"17-2031"},{"id":3,"name":"true red","year":2002,"color":"#BF1932","pantone_value":"19-1664"},{"id":4,"name":"aqua sky","year":2003,"color":"#7BC4C4","pantone_value":"14-4811"},{"id":5,"name":"tigerlily","year":2004,"color":"#E2583E","pantone_value":"17-1456"},{"id":6,"name":"blue turquoise","year":2005,"color":"#53B0AE","pantone_value":"15-5217"}],"ad":{"company":"StatusCode Weekly","url":"http://statuscode.org/","text":"A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."}}
+
+14:12:28.720 [print] data ----> [
+  {
+    "color": "#98B2D1",
+    "year": 2000,
+    "name": "cerulean",
+    "id": 1,
+    "pantone_value": "15-4020"
+  },
+  {
+    "color": "#C74375",
+    "year": 2001,
+    "name": "fuchsia rose",
+    "id": 2,
+    "pantone_value": "17-2031"
+  },
+  {
+    "color": "#BF1932",
+    "year": 2002,
+    "name": "true red",
+    "id": 3,
+    "pantone_value": "19-1664"
+  },
+  {
+    "color": "#7BC4C4",
+    "year": 2003,
+    "name": "aqua sky",
+    "id": 4,
+    "pantone_value": "14-4811"
+  },
+  {
+    "color": "#E2583E",
+    "year": 2004,
+    "name": "tigerlily",
+    "id": 5,
+    "pantone_value": "17-1456"
+  },
+  {
+    "color": "#53B0AE",
+    "year": 2005,
+    "name": "blue turquoise",
+    "id": 6,
+    "pantone_value": "15-5217"
+  }
+]
+
+14:12:28.768 [print] result is---> {
+  "color": "#53B0AE",
+  "year": 2005,
+  "name": "blue turquoise",
+  "id": 6,
+  "pantone_value": "15-5217"
+}
+
+14:12:28.823 karate.env system property was:  
+14:12:28.917 request:
+1 > POST https://reqres.in/api/oauth2/token
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 72
+1 > Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_242)
+grant_type=client_credentials&email=eve.holt%40reqres.in&password=pistol
+
+14:12:30.173 response time in milliseconds: 1254.64
+1 < 201
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 58a740c65dcfe3b2-ATL
+1 < Connection: keep-alive
+1 < Content-Length: 134
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 27 Apr 2020 08:42:56 GMT
+1 < Etag: W/"86-NknMmSbpCOCHOie1OiTUv0mRqGQ"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d3ed36ed38f2f1b4a39e73fd372408f5c1587976976; expires=Wed, 27-May-20 08:42:56 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 025c66cff90000e3b245819200000001
+{"grant_type":"client_credentials","email":"eve.holt@reqres.in","password":"pistol","id":"139","createdAt":"2020-04-27T08:42:56.560Z"}
+
+14:12:30.178 [print] response ---> {
+  "createdAt": "2020-04-27T08:42:56.560Z",
+  "password": "pistol",
+  "grant_type": "client_credentials",
+  "id": "139",
+  "email": "eve.holt@reqres.in"
+}
+
+14:12:30.183 [print] 
+14:12:30.200 request:
+1 > GET https://reqres.in/api/users?page=2
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: null
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_242)
+
+14:12:31.302 response time in milliseconds: 1099.77
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Age: 6009
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 58a740cede10e3c6-ATL
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 27 Apr 2020 08:42:57 GMT
+1 < Etag: W/"4dd-IPv5LdOOb6s5S9E3i59wBCJ1k/0"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d6e0b331a8f328e860d9a1ba26e49cc0b1587976977; expires=Wed, 27-May-20 08:42:57 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 025c66d5460000e3c6f994a200000001
+{"page":2,"per_page":6,"total":12,"total_pages":2,"data":[{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/follettkyle/128.jpg"},{"id":8,"email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","last_name":"Ferguson","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/araa3185/128.jpg"},{"id":9,"email":"tobias.funke@reqres.in","first_name":"Tobias","last_name":"Funke","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/vivekprvr/128.jpg"},{"id":10,"email":"byron.fields@reqres.in","first_name":"Byron","last_name":"Fields","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/russoedu/128.jpg"},{"id":11,"email":"george.edwards@reqres.in","first_name":"George","last_name":"Edwards","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/mrmoiree/128.jpg"},{"id":12,"email":"rachel.howell@reqres.in","first_name":"Rachel","last_name":"Howell","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/hebertialmeida/128.jpg"}],"ad":{"company":"StatusCode Weekly","url":"http://statuscode.org/","text":"A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."}}
+
+14:12:31.352 karate.env system property was:  
+14:12:31.361 request:
+1 > GET https://reqres.in/api/users%3Fpage=2
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_242)
+
+14:12:33.118 response time in milliseconds: 1755.12
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Age: 693
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 58a740da3faeeaeb-ATL
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 27 Apr 2020 08:42:59 GMT
+1 < Etag: W/"301-ijGNEim/mAI7LpbQIXyQc2bjt+k"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d448752d5ef14692c803caf0f496c3cde1587976979; expires=Wed, 27-May-20 08:42:59 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 025c66dc660000eaebb0959200000001
+{"page":1,"per_page":6,"total":12,"total_pages":2,"data":[{"id":1,"name":"cerulean","year":2000,"color":"#98B2D1","pantone_value":"15-4020"},{"id":2,"name":"fuchsia rose","year":2001,"color":"#C74375","pantone_value":"17-2031"},{"id":3,"name":"true red","year":2002,"color":"#BF1932","pantone_value":"19-1664"},{"id":4,"name":"aqua sky","year":2003,"color":"#7BC4C4","pantone_value":"14-4811"},{"id":5,"name":"tigerlily","year":2004,"color":"#E2583E","pantone_value":"17-1456"},{"id":6,"name":"blue turquoise","year":2005,"color":"#53B0AE","pantone_value":"15-5217"}],"ad":{"company":"StatusCode Weekly","url":"http://statuscode.org/","text":"A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."}}
+
+14:12:33.140 assertion failed: path: $.page, actual: 1, expected: 2, reason: not equal (Integer)
+14:12:33.157 karate.env system property was:  
+14:12:33.168 request:
+1 > GET https://reqres.in/api/users/2
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_242)
+
+14:12:34.256 response time in milliseconds: 1086.68
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Age: 4600
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 58a740e15cddec0d-ATL
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 27 Apr 2020 08:43:00 GMT
+1 < Etag: W/"173-1Z8bn0V7UjH6FK7NCaza1ccWXQk"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d2b95462f6b3eadf4faa77f23ef11dddb1587976980; expires=Wed, 27-May-20 08:43:00 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 025c66e0d60000ec0d5514e200000001
+{"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/josephstein/128.jpg"},"ad":{"company":"StatusCode Weekly","url":"http://statuscode.org/","text":"A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."}}
+
+14:12:34.283 karate.env system property was:  
+14:12:34.302 request:
+1 > GET https://reqres.in/api/users/23
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_242)
+
+14:12:35.584 response time in milliseconds: 1280.81
+1 < 404
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: EXPIRED
+1 < CF-RAY: 58a740e81e54ec0d-ATL
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Length: 2
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 27 Apr 2020 08:43:02 GMT
+1 < Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d7e611d0fdba26ba933acb2b0e2ad11941587976981; expires=Wed, 27-May-20 08:43:01 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 025c66e5120000ec0d548a4200000001
+{}
+
+14:12:35.601 karate.env system property was:  
+14:12:35.609 request:
+1 > GET https://reqres.in/api/unknown
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_242)
+
+14:12:36.648 response time in milliseconds: 1037.69
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Age: 43
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 58a740f04b3de3ba-ATL
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 27 Apr 2020 08:43:03 GMT
+1 < Etag: W/"301-ijGNEim/mAI7LpbQIXyQc2bjt+k"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d39f6655c1ba1687ce542188c338de3c01587976983; expires=Wed, 27-May-20 08:43:03 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 025c66ea290000e3ba291f7200000001
+{"page":1,"per_page":6,"total":12,"total_pages":2,"data":[{"id":1,"name":"cerulean","year":2000,"color":"#98B2D1","pantone_value":"15-4020"},{"id":2,"name":"fuchsia rose","year":2001,"color":"#C74375","pantone_value":"17-2031"},{"id":3,"name":"true red","year":2002,"color":"#BF1932","pantone_value":"19-1664"},{"id":4,"name":"aqua sky","year":2003,"color":"#7BC4C4","pantone_value":"14-4811"},{"id":5,"name":"tigerlily","year":2004,"color":"#E2583E","pantone_value":"17-1456"},{"id":6,"name":"blue turquoise","year":2005,"color":"#53B0AE","pantone_value":"15-5217"}],"ad":{"company":"StatusCode Weekly","url":"http://statuscode.org/","text":"A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."}}
+
+14:12:36.674 karate.env system property was:  
+14:12:36.689 request:
+1 > GET https://reqres.in/api/unknown/2
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_242)
+
+14:12:37.781 response time in milliseconds: 1090.57
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Age: 81
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 58a740f75e89f1c2-ATL
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 27 Apr 2020 08:43:04 GMT
+1 < Etag: W/"128-2OIdTk88Wl5IU+miBPIdhOPMcBo"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d13d485ad46899c9c555a89d7d07b41101587976984; expires=Wed, 27-May-20 08:43:04 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 025c66ee930000f1c231963200000001
+{"data":{"id":2,"name":"fuchsia rose","year":2001,"color":"#C74375","pantone_value":"17-2031"},"ad":{"company":"StatusCode Weekly","url":"http://statuscode.org/","text":"A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."}}
+
+14:12:37.805 karate.env system property was:  
+14:12:37.826 request:
+1 > GET https://reqres.in/api/unknown/23
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_242)
+
+14:12:38.950 response time in milliseconds: 1122.98
+1 < 404
+1 < Access-Control-Allow-Origin: *
+1 < Age: 91
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 58a740fe8d9ff371-ATL
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Length: 2
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 27 Apr 2020 08:43:05 GMT
+1 < Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=dcc9bce7c08e90a5e96731b23e291779b1587976985; expires=Wed, 27-May-20 08:43:05 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 025c66f3100000f371a194f200000001
+{}
+
+14:12:39.014 karate.env system property was:  
+14:12:39.021 request:
+1 > POST https://reqres.in/api/users/?delay=3
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 34
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_242)
+{"name":"morpheus","job":"leader"}
+
+14:12:43.293 response time in milliseconds: 4271.64
+1 < 201
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 58a7410568d8f1a6-ATL
+1 < Connection: keep-alive
+1 < Content-Length: 84
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 27 Apr 2020 08:43:09 GMT
+1 < Etag: W/"54-PVaqZP8YhHZhgOWTYVpYiF+uy4w"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=ddd1c1f3c917f1a220de376a5109395641587976986; expires=Wed, 27-May-20 08:43:06 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 025c66f7630000f1a643a6f200000001
+{"name":"morpheus","job":"leader","id":"534","createdAt":"2020-04-27T08:43:09.651Z"}
+
+14:12:43.329 karate.env system property was:  
+14:12:43.343 request:
+1 > POST https://reqres.in/api/oauth2/token
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 77
+1 > Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_242)
+grant_type=client_credentials&email=%23%28email%29&password=%23%28password%29
+
+14:12:44.671 response time in milliseconds: 1326.95
+1 < 201
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 58a741210daaf369-ATL
+1 < Connection: keep-alive
+1 < Content-Length: 129
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 27 Apr 2020 08:43:11 GMT
+1 < Etag: W/"81-ebyG9nmAvyAfvC/PlFO7yErNSi0"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d75dfbbbe5f9260e0f8babdc5b24593021587976990; expires=Wed, 27-May-20 08:43:10 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 025c6708a60000f36913bf2200000001
+{"grant_type":"client_credentials","email":"#(email)","password":"#(password)","id":"433","createdAt":"2020-04-27T08:43:11.065Z"}
+
+14:12:44.673 [print] response ---> {
+  "createdAt": "2020-04-27T08:43:11.065Z",
+  "password": "#(password)",
+  "grant_type": "client_credentials",
+  "id": "433",
+  "email": "#(email)"
+}
+
+14:12:44.675 [print] 

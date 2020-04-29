@@ -1,0 +1,111 @@
+14:08:34.542 request:
+1 > GET https://reqres.in/api/users/23
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_242)
+
+14:08:36.430 response time in milliseconds: 1887.09
+1 < 404
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: EXPIRED
+1 < CF-RAY: 58af7874d991f371-ATL
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Length: 2
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 28 Apr 2020 08:39:03 GMT
+1 < Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=ddcc7569e534c35dd41e21abeefb4a3ba1588063143; expires=Thu, 28-May-20 08:39:03 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 0261899d050000f371bba96200000001
+{}
+
+000f19e7e8dd200000001
+{"page":1,"per_page":6,"total":12,"total_pages":2,"data":[{"id":1,"name":"cerulean","year":2000,"color":"#98B2D1","pantone_value":"15-4020"},{"id":2,"name":"fuchsia rose","year":2001,"color":"#C74375","pantone_value":"17-2031"},{"id":3,"name":"true red","year":2002,"color":"#BF1932","pantone_value":"19-1664"},{"id":4,"name":"aqua sky","year":2003,"color":"#7BC4C4","pantone_value":"14-4811"},{"id":5,"name":"tigerlily","year":2004,"color":"#E2583E","pantone_value":"17-1456"},{"id":6,"name":"blue turquoise","year":2005,"color":"#53B0AE","pantone_value":"15-5217"}],"ad":{"company":"StatusCode Weekly","url":"http://statuscode.org/","text":"A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."}}
+
+13:53:58.444 [print] data ----> [
+  {
+    "color": "#98B2D1",
+    "year": 2000,
+    "name": "cerulean",
+    "id": 1,
+    "pantone_value": "15-4020"
+  },
+  {
+    "color": "#C74375",
+    "year": 2001,
+    "name": "fuchsia rose",
+    "id": 2,
+    "pantone_value": "17-2031"
+  },
+  {
+    "color": "#BF1932",
+    "year": 2002,
+    "name": "true red",
+    "id": 3,
+    "pantone_value": "19-1664"
+  },
+  {
+    "color": "#7BC4C4",
+    "year": 2003,
+    "name": "aqua sky",
+    "id": 4,
+    "pantone_value": "14-4811"
+  },
+  {
+    "color": "#E2583E",
+    "year": 2004,
+    "name": "tigerlily",
+    "id": 5,
+    "pantone_value": "17-1456"
+  },
+  {
+    "color": "#53B0AE",
+    "year": 2005,
+    "name": "blue turquoise",
+    "id": 6,
+    "pantone_value": "15-5217"
+  }
+]
+
+13:53:58.501 [print] result is---> {
+  "color": "#53B0AE",
+  "year": 2005,
+  "name": "blue turquoise",
+  "id": 6,
+  "pantone_value": "15-5217"
+}
+
+13:53:58.524 request:
+1 > GET https://reqres.in/api/users/2
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_242)
+
+13:53:59.608 response time in milliseconds: 1083.46
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Age: 1751
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 58af630d5e05ba64-ATL
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 28 Apr 2020 08:24:26 GMT
+1 < Etag: W/"173-1Z8bn0V7UjH6FK7NCaza1ccWXQk"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=da85c76e10a98201563da439132a352821588062266; expires=Thu, 28-May-20 08:24:26 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 02617c3c5a0000ba643e90e200000001
+{"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/josephstein/128.jpg"},"ad":{"company":"StatusCode Weekly","url":"http://statuscode.org/","text":"A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."}}
+

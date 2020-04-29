@@ -1,0 +1,159 @@
+14:08:34.541 request:
+1 > GET https://reqres.in/api/users%3Fpage=1
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_242)
+
+14:08:36.235 response time in milliseconds: 1684.19
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Age: 193
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 58af7874de59b9c8-ATL
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Tue, 28 Apr 2020 08:39:03 GMT
+1 < Etag: W/"301-ijGNEim/mAI7LpbQIXyQc2bjt+k"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=de458bad0a27b415ffe8e6a5a1c633e321588063143; expires=Thu, 28-May-20 08:39:03 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 0261899d070000b9c8e3a61200000001
+{"page":1,"per_page":6,"total":12,"total_pages":2,"data":[{"id":1,"name":"cerulean","year":2000,"color":"#98B2D1","pantone_value":"15-4020"},{"id":2,"name":"fuchsia rose","year":2001,"color":"#C74375","pantone_value":"17-2031"},{"id":3,"name":"true red","year":2002,"color":"#BF1932","pantone_value":"19-1664"},{"id":4,"name":"aqua sky","year":2003,"color":"#7BC4C4","pantone_value":"14-4811"},{"id":5,"name":"tigerlily","year":2004,"color":"#E2583E","pantone_value":"17-1456"},{"id":6,"name":"blue turquoise","year":2005,"color":"#53B0AE","pantone_value":"15-5217"}],"ad":{"company":"StatusCode Weekly","url":"http://statuscode.org/","text":"A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."}}
+
+14:08:36.238 [print] {
+  "per_page": 6,
+  "total": 12,
+  "ad": {
+    "company": "StatusCode Weekly",
+    "text": "A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things.",
+    "url": "http://statuscode.org/"
+  },
+  "data": [
+    {
+      "color": "#98B2D1",
+      "year": 2000,
+      "name": "cerulean",
+      "id": 1,
+      "pantone_value": "15-4020"
+    },
+    {
+      "color": "#C74375",
+      "year": 2001,
+      "name": "fuchsia rose",
+      "id": 2,
+      "pantone_value": "17-2031"
+    },
+    {
+      "color": "#BF1932",
+      "year": 2002,
+      "name": "true red",
+      "id": 3,
+      "pantone_value": "19-1664"
+    },
+    {
+      "color": "#7BC4C4",
+      "year": 2003,
+      "name": "aqua sky",
+      "id": 4,
+      "pantone_value": "14-4811"
+    },
+    {
+      "color": "#E2583E",
+      "year": 2004,
+      "name": "tigerlily",
+      "id": 5,
+      "pantone_value": "17-1456"
+    },
+    {
+      "color": "#53B0AE",
+      "year": 2005,
+      "name": "blue turquoise",
+      "id": 6,
+      "pantone_value": "15-5217"
+    }
+  ],
+  "page": 1,
+  "total_pages": 2
+}
+
+14:08:36.279 [print] {
+  "page": 1,
+  "per_page": 6,
+  "total": 12,
+  "total_pages": 2,
+  "data": [
+    {
+      "id": 1,
+      "name": "cerulean",
+      "year": 2000,
+      "color": "#98B2D1",
+      "pantone_value": "15-4020"
+    },
+    {
+      "id": 2,
+      "name": "fuchsia rose",
+      "year": 2001,
+      "color": "#C74375",
+      "pantone_value": "17-2031"
+    },
+    {
+      "id": 3,
+      "name": "true red",
+      "year": 2002,
+      "color": "#BF1932",
+      "pantone_value": "19-1664"
+    },
+    {
+      "id": 4,
+      "name": "aqua sky",
+      "year": 2003,
+      "color": "#7BC4C4",
+      "pantone_value": "14-4811"
+    },
+    {
+      "id": 5,
+      "name": "tigerlily",
+      "year": 2004,
+      "color": "#E2583E",
+      "pantone_value": "17-1456"
+    },
+    {
+      "id": 6,
+      "name": "blue turquoise",
+      "year": 2005,
+      "color": "#53B0AE",
+      "pantone_value": "15-5217"
+    }
+  ],
+  "ad": {
+    "company": "StatusCode Weekly",
+    "url": "http://statuscode.org/",
+    "text": "A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."
+  }
+}
+
+r/mrmoiree/128.jpg"
+    },
+    {
+      "id": 12,
+      "email": "rachel.howell@reqres.in",
+      "first_name": "Rachel",
+      "last_name": "Howell",
+      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/hebertialmeida/128.jpg"
+    }
+  ],
+  "ad": {
+    "company": "StatusCode Weekly",
+    "url": "http://statuscode.org/",
+    "text": "A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."
+  }
+}
+
+14:02:54.464 assertion failed: path: $.page, actual: 1, expected: 2, reason: not equal (Integer)
+":"Tobias","email":"tobias.funke@reqres.in"},{"last_name":"Fields","id":10,"avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/russoedu/128.jpg","first_name":"Byron","email":"byron.fields@reqres.in"},{"last_name":"Edwards","id":11,"avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/mrmoiree/128.jpg","first_name":"George","email":"george.edwards@reqres.in"},{"last_name":"Howell","id":12,"avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/hebertialmeida/128.jpg","first_name":"Rachel","email":"rachel.howell@reqres.in"}],"page":2,"total_pages":2}

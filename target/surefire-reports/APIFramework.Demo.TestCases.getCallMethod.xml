@@ -1,0 +1,50 @@
+<testsuite failures="0" name="APIFramework/Demo/TestCases/getCallMethod.feature" skipped="0" tests="3" time="6.317564">
+  <testcase classname="APIFramework.Demo.TestCases.getCallMethod" name="List all Users" time="2.053904">
+    <system-out>* def ExpectedResult = read('../Data/result1.json') ....................... passed
+Given url someUrlBase ..................................................... passed
+And path listAllUsersEndPoint ............................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+Then print response ....................................................... passed
+Then print ExpectedResult[0] .............................................. passed
+And match response == ExpectedResult[0] ................................... passed</system-out>
+  </testcase>
+  <testcase classname="APIFramework.Demo.TestCases.getCallMethod" name="Single User" time="2.052941">
+    <system-out>* def ExpectedResult = read('../Data/result1.json') ....................... passed
+Given url someUrlBase ..................................................... passed
+And path listAllUsersEndPoint ............................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+Then print response ....................................................... passed
+Then print ExpectedResult[0] .............................................. passed
+And match response == ExpectedResult[0] ................................... passed
+* def ExpectedResult = read('../Data/result1.json') ....................... passed
+Given url someUrlBase ..................................................... passed
+And path singleUserEndPoint ............................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response == ExpectedResult[1] ................................... passed</system-out>
+  </testcase>
+  <testcase classname="APIFramework.Demo.TestCases.getCallMethod" name="Single User with Id 23 is not found" time="2.210719">
+    <system-out>* def ExpectedResult = read('../Data/result1.json') ....................... passed
+Given url someUrlBase ..................................................... passed
+And path listAllUsersEndPoint ............................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+Then print response ....................................................... passed
+Then print ExpectedResult[0] .............................................. passed
+And match response == ExpectedResult[0] ................................... passed
+* def ExpectedResult = read('../Data/result1.json') ....................... passed
+Given url someUrlBase ..................................................... passed
+And path singleUserEndPoint ............................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response == ExpectedResult[1] ................................... passed
+* def ExpectedResult = read('../Data/result1.json') ....................... passed
+Given url someUrlBase ..................................................... passed
+And path singleUserNotFoundEndPoint ....................................... passed
+When method get ........................................................... passed
+Then status 404 ........................................................... passed
+And match response == ExpectedResult[2] ................................... passed</system-out>
+  </testcase>
+</testsuite>
